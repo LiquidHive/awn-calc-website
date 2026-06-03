@@ -42,11 +42,10 @@
   color: var(--primary);
 }
 
-.brand-icon-placeholder {
+.brand-icon {
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background: var(--primary-container);
 }
 
 .nav-links {
@@ -359,7 +358,7 @@
   color: #fff;
 }
 
-.footer-brand .brand-icon-placeholder {
+.footer-brand .brand-icon {
   background: var(--primary);
 }
 
