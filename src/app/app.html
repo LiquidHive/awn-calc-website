@@ -1,0 +1,140 @@
+<header class="header">
+  <nav class="nav container">
+    <div class="nav-brand">
+      <span class="brand-icon-placeholder"></span>
+      <span class="brand-text">AwnCalc</span>
+    </div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="https://github.com/LiquidHive/app-privacy-policy/blob/e0ec820f319db0e5f3701f59c9c40fa14faf2480/AwnCalc_PRIVACY_POLICY.md" target="_blank"
+        rel="noopener">Privacy</a>
+      <button class="theme-toggle" (click)="toggleTheme()"
+        [attr.aria-label]="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
+        @if (isDark) {
+        <span class="material-symbols-outlined">light_mode</span>
+        } @else {
+        <span class="material-symbols-outlined">dark_mode</span>
+        }
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">Pricing for awnings &amp; shade components,&nbsp;simplified.</h1>
+    <p class="hero-subtitle">
+      AwnCalc is a pricing calculator for awning and shade component installers and fabricators.
+      Quickly itemize parts with built-in formulas for
+      <strong>slats, flashings, tubes, and hardware</strong>
+      &mdash; all offline, all on your device.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://play.google.com/store" target="_blank" rel="noopener">
+        <span class="material-symbols-outlined">download</span>
+        Get on Google Play
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-value">15</span>
+        <span class="stat-label">Pre-loaded Items</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">100%</span>
+        <span class="stat-label">Offline</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">Configurable</span>
+        <span class="stat-label">Tax, Interest &amp; Units</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section features">
+  <div class="container">
+    <h2 class="section-title">Everything you need to price a job</h2>
+    <p class="section-desc">
+      From slats to screws, AwnCalc handles the math so you can focus on the install.
+    </p>
+    <div class="feature-grid">
+      @for (f of features; track f.title) {
+      <div class="feature-card">
+        <div class="feature-icon">
+          <span class="material-symbols-outlined">{{ f.icon }}</span>
+        </div>
+        <h3 class="feature-title">{{ f.title }}</h3>
+        <p class="feature-desc">{{ f.desc }}</p>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <div class="container">
+    <h2 class="section-title">About AwnCalc</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          AwnCalc is a free pricing calculator built with Flutter for awning and shade component
+          professionals. It uses intelligent formulas to compute prices for slats, flashings, tubes,
+          and hardware — all stored locally on your device.
+        </p>
+        <p>
+          Whether you need to price a residential patio cover or a commercial shade structure, just
+          add your measurements, adjust unit pricing, and get an instant job total with tax and
+          interest. No internet required after download.
+        </p>
+        <ul class="about-list">
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> 15 pre-loaded components
+            with smart formulas
+          </li>
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> Configurable tax rates,
+            interest, and currency
+          </li>
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> Imperial or metric unit
+            system
+          </li>
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> Light, dark, and system
+            theme modes
+          </li>
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> All data stored locally — no
+            accounts needed
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <span class="brand-icon-placeholder"></span>
+      <span>AwnCalc</span>
+    </div>
+    <p class="footer-desc">
+      A pricing calculator for awnings and shade components. Free and private.
+    </p>
+    <div class="footer-links">
+      <a href="https://github.com/LiquidHive/app-privacy-policy/blob/main/PRIVACY_POLICY.md" target="_blank"
+        rel="noopener">
+        <span class="material-symbols-outlined">privacy_tip</span>
+        Privacy Policy
+      </a>
+      <a href="mailto:liquidhive.dev@gmail.com">
+        <span class="material-symbols-outlined">mail</span>
+        Contact
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2026 LiquidHive. All rights reserved.</p>
+  </div>
+</footer>
