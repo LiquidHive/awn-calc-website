@@ -409,8 +409,8 @@ body {
 
 /* Footer */
 .footer {
-  background: var(--on-surface);
-  color: var(--on-surface-variant);
+  background: #1c1b1f;
+  color: #b0b8c1;
   padding: 64px 0 40px;
 }
 
@@ -451,7 +451,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: var(--on-surface-variant);
+  color: #b0b8c1;
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.2s;
